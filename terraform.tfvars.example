@@ -1,0 +1,10 @@
+# Copy this file to terraform.tfvars and fill in your values
+# terraform.tfvars is gitignored by convention — do NOT commit secrets
+
+aws_region          = "us-east-1"
+instance_name       = "ubuntu-server"
+instance_type       = "t3.micro"
+key_pair_name       = "your-key-pair-name"   # <-- replace with your actual key pair name
+ssh_allowed_cidr    = "0.0.0.0/0"            # <-- replace with your IP e.g. "203.0.113.5/32"
+root_volume_size_gb = 20
+environment         = "dev"
