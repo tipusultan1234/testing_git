@@ -29,7 +29,7 @@ data "aws_ami" "ubuntu" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-
+## Commenting for anything
   filter {
     name   = "architecture"
     values = ["x86_64"]
